@@ -28,7 +28,7 @@ jobs:
     inputs:
       command: pack
       publishWebProjects: false
-      projects: '**/*MyDemoApp.sln'
+      projects: '**/*CoreProxy.sln'
       arguments: --output $(Build.ArtifactStagingDirectory)/
       zipAfterPublish: True
       searchPatternPack: '**/CoreProxy/*.csproj'
