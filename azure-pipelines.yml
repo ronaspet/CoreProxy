@@ -16,7 +16,7 @@ jobs:
     displayName: dotnet restore
     inputs:
       command: restore
-      projects: '**/MyAwesomeLibray/*.csproj'
+      projects: '**/CoreProxy/*.csproj'
       feedRestore: 02cbe044-5ae8-44fb-ad6c-12b7f5569259/c84aad62-9d47-4d3d-a00a-716ed168d052
   - task: DotNetCoreCLI@2
     displayName: dotnet build
