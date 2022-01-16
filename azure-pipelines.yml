@@ -21,7 +21,7 @@ jobs:
   - task: DotNetCoreCLI@2
     displayName: dotnet build
     inputs:
-      projects: '**/MyAwesomeLibray/*.csproj'
+      projects: '**/CoreProxy/*.csproj'
       arguments: --configuration $(BuildConfiguration)
   - task: DotNetCoreCLI@2
     displayName: dotnet pack
@@ -31,7 +31,7 @@ jobs:
       projects: '**/*MyDemoApp.sln'
       arguments: --output $(Build.ArtifactStagingDirectory)/
       zipAfterPublish: True
-      searchPatternPack: '**/MyAwesomeLibray/*.csproj'
+      searchPatternPack: '**/CoreProxy/*.csproj'
       versioningScheme: byEnvVar
       versionEnvVar: BuildEnv
   - task: DotNetCoreCLI@2
