@@ -2,19 +2,22 @@ using System;
 using Castle.DynamicProxy;
 using Microsoft.Extensions.DependencyInjection;
 
-public class ClassProxyFactory<T, TI>
-where T : class, new()
-where TI : IInterceptor
+namespace ronaspet.CoreProxy
 {
-    public static T CreateClassProxy(IServiceProvider ctx)
+    public class ClassProxyFactory<T, TI>
+    where T : class, new()
+    where TI : IInterceptor
     {
-        var proxyFactory = ctx.GetRequiredService<ClassProxyFactory<T, TI>>();
-        return (T)proxyFactory.Proxy;
-    }
+        public static T CreateClassProxy(IServiceProvider ctx)
+        {
+            var proxyFactory = ctx.GetRequiredService<ClassProxyFactory<T, TI>>();
+            return (T)proxyFactory.Proxy;
+        }
 
-    public T Proxy { get; set; }
-    public ClassProxyFactory(T instance, TI interceptor)
-    {
-        Proxy = (T)(new ProxyGenerator().CreateClassProxyWithTarget(typeof(T), instance, interceptor));
-    }
+        public T Proxy { get; set; }
+        public ClassProxyFactory(T instance, TI interceptor)
+        {
+            Proxy = (T)(new ProxyGenerator().CreateClassProxyWithTarget(typeof(T), instance, interceptor));
+        }
+    }   
 }

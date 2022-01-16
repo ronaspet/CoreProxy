@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Castle.DynamicProxy;
-
+namespace ronaspet.CoreProxy
+{
 public static class ServiceCollectionExtension
 {
     public static IServiceCollection AddSingletonWithProxy<IT, T, TI>(this IServiceCollection services)
@@ -74,4 +75,5 @@ public static class ServiceCollectionExtension
             ClassProxyFactory<T, TI>.CreateClassProxy(ctx));
         return services;
     }
+}
 }

@@ -1,4 +1,7 @@
-public interface IProxy<IT>
+namespace ronaspet.CoreProxy
 {
-    IT Proxy { get; }
+    public interface IProxy<IT>
+    {
+        IT Proxy { get; }
+    }
 }
