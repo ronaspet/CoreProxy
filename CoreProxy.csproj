@@ -11,7 +11,10 @@
 
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
-    
+
+    <PackageProjectUrl>https://github.com/ronaspet/CoreProxy</PackageProjectUrl>
+    <PackageTags>interceptor, proxy, DI, DependencyInjection, core</PackageTags>
+
     <PackageId>ronaspet.CoreProxy</PackageId>
     <Version>1.0.1</Version>
     <Authors>Peter Ronaszeki</Authors>
