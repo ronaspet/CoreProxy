@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 namespace ronaspet.CoreProxy
 {
     public class ClassProxyFactory<T, TI>
-    where T : class, new()
+    where T : class
     where TI : IInterceptor
     {
         public static T CreateClassProxy(IServiceProvider ctx)
