@@ -19,7 +19,7 @@
 
     <PackageId>ronaspet.CoreProxy</PackageId>
     <Description>You can add and use interceptor classes and/or any proxy classes with DI.</Description>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Peter Ronaszeki</Authors>
     <Company>ronaspet</Company>
   </PropertyGroup>
