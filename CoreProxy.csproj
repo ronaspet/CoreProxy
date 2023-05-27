@@ -15,6 +15,8 @@
     <PackageProjectUrl>https://github.com/ronaspet/CoreProxy</PackageProjectUrl>
     <PackageTags>interceptor, proxy, DI, DependencyInjection, core</PackageTags>
 
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
     <PackageId>ronaspet.CoreProxy</PackageId>
     <Version>1.0.1</Version>
     <Authors>Peter Ronaszeki</Authors>
