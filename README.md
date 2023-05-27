@@ -1,0 +1,1 @@
+You can add and use interceptor classes and/or any proxy classes with DI.
